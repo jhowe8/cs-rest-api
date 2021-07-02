@@ -7,6 +7,8 @@ namespace Catalog.Repositories
 {
     public interface IItemsRepository
     {
+        /// <summary> get a single item based on the specified Id
+        /// </summary>
         Task<Item> GetItemAsync(Guid id);
         Task<IEnumerable<Item>> GetItemsAsync();
         Task CreateItemAsync(Item item);
